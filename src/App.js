@@ -1,45 +1,33 @@
-import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Landing from './pages/landing';
-import SignIn from './pages/signin';
-import SignUp from './pages/signup';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import ForgotPassword from './pages/forgotpassword';
-import ResetPassword from './pages/resetpassword';
-import Home from './pages/home';
-import Create from './pages/create';
-import Topics from './pages/topics';
-import Course from './pages/course';
-import Certificate from './pages/certificate';
-import Profile from './pages/profile';
-import Pricing from './pages/pricing';
-import Features from './pages/features';
-import About from './pages/about';
-import Payment from './pages/payment';
-import Success from './pages/success';
-import Manage from './pages/manage';
-import Successful from './pages/successful';
-import Failed from './pages/failed';
-import Contact from './pages/contact';
-import DashBoard from './admin/dashboard';
-import Users from './admin/users';
-import Courses from './admin/courses';
-import PaidUsers from './admin/paidusers';
-import Admins from './admin/admins';
-import Contacts from './admin/contacts';
-import Terms from './admin/terms';
-import Privacy from './admin/privacy';
-import Cancellation from './admin/cancellation';
-import Refund from './admin/refund';
-import Billing from './admin/billing';
-import TermsPolicy from './pages/termspolicy';
-import PrivacyPolicy from './pages/privacypolicy';
-import CancelPolicy from './pages/cancelpolicy';
-import RefundPolicy from './pages/refundpolicy';
-import BillingPolicy from './pages/billingpolicy';
-import Error from './pages/error';
-import Pending from './pages/pending';
+import './App.css';
+import { 
+  Landing, 
+  SignIn, 
+  SignUp, 
+  Home, 
+  DashBoard, 
+  Users,
+  Courses,
+  PaidUsers,
+  Admins,
+  Contacts,
+  Terms,
+  Privacy,
+  Cancellation,
+  Refund,
+  Billing,
+  TermsPolicy,
+  PrivacyPolicy,
+  CancelPolicy,
+  RefundPolicy,
+  BillingPolicy,
+  Error,
+  Pending
+
+} from './pages/index.js';
+
 
 function App() {
 
