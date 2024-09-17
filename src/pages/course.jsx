@@ -17,6 +17,7 @@ import { IoSend } from "react-icons/io5";
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
+
 const Course = () => {
 
     const [isOpen, setIsOpen] = useState(false);
