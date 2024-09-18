@@ -624,7 +624,7 @@ const Course = () => {
                     <div onClick={() => setIsOpenDrawer(true)} className="m-5 fixed bottom-4 right-4 z-40 w-12 h-12 bg-black text-white rounded-full flex justify-center items-center shadow-md dark:text-black dark:bg-white">
                         <IoChatbubbleEllipses size={20} />
                     </div>
-                    <div className="flex bg-white dark:bg-black md:hidden pb-10 overflow-y-auto">
+                    <div className="flex bg-yellow-400 dark:bg-black md:hidden pb-10 overflow-y-auto">
                         <div className={`fixed inset-0 bg-black opacity-50 z-50 ${isSidebarOpen ? 'block' : 'hidden'}`} onClick={toggleSidebar}></div>
                         <div className="flex-1 flex flex-col overflow-hidden">
 

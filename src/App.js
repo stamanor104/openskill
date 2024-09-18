@@ -40,13 +40,12 @@ import RefundPolicy from './pages/refundpolicy';
 import BillingPolicy from './pages/billingpolicy';
 import Error from './pages/error';
 import Pending from './pages/pending';
-import Try from './pages/try';
 
 function App() {
 
   return (
     <Router>
-      {/* <div>
+      <div>
         <ToastContainer
           limit={3}
           progressClassName={sessionStorage.getItem('darkMode') === 'true' ? "toastProgressDark" : "toastProgress"}
@@ -63,7 +62,7 @@ function App() {
           theme={sessionStorage.getItem('darkMode') === 'true' ? 'dark' : 'light'}
         />
         <Routes>
-          {/* Main App 
+          {/* Main App */}
           <Route path="/" exact element={<Landing />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
@@ -90,7 +89,7 @@ function App() {
           <Route path='/refund' element={<RefundPolicy />} />
           <Route path='/billing' element={<BillingPolicy />} />
           <Route path='/pending' element={<Pending />} />
-          {/* Admin Panel 
+          {/* Admin Panel */}
           <Route path='/dashBoard' element={<DashBoard />} />
           <Route path='/users' element={<Users />} />
           <Route path='/courses' element={<Courses />} />
@@ -104,10 +103,7 @@ function App() {
           <Route path='/editbilling' element={<Billing />} />
           <Route path="*" element={<Error />} />
         </Routes>
-      </div> */}
-      <Routes>
-        <Route path="/" element={<Try />} />
-      </Routes>
+      </div>
     </Router>
   );
 }

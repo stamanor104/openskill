@@ -387,7 +387,7 @@ app.post('/api/course', async (req, res) => {
         orientation: 'landscape',
     }).then(async (result) => {
         const photos = result.response.results;
-        const photo = photos[0].urls.regular
+        const photo = photos[0]?.urls?.regular
         try {
             const newCourse = new Course({ user, content, type, mainTopic, photo });
             await newCourse.save();
